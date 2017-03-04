@@ -12,4 +12,6 @@ docker build -t jomelface .
 docker run -it -p 3000:3000 jomelface:latest
  ```
 
+and to interface with the app, you can use the form in the `index.html`
+
 If you would like to use a picture of someone other than Jomel (not sure why you would, but it's up to you ;) ) put their picture files into the `./faces` directory before you build the container.
