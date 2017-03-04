@@ -1,0 +1,16 @@
+{
+  "name": "jomelface",
+  "version": "1.0.0",
+  "description": "Jomelify a picture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petar Kolaric",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.0",
+    "express-fileupload": "^0.1.1",
+    "fs": "0.0.1-security"
+  }
+}
