@@ -2,7 +2,7 @@ var express = require('express')
 const fileUpload = require('express-fileupload')
 var spawn = require( 'child_process' ).spawnSync
 var command = '/root/.go/src/github.com/zikes/chrisify/chrisify'
-var parameters = ['--faces', '/app/faces/', '--haar', '/root/.go/src/github.com/zikes/chrisify/haarcascade_frontalface_alt.xml', '/app/uploads/input.jpg'];
+var parameters = ['--faces', '/app/faces/', '--haar', '/root/.go/src/github.com/zikes/chrisify/haarcascade_frontalface_alt.xml', '/app/uploads/input'];
 
 var app = express()
 
@@ -16,7 +16,7 @@ app.post('/jomelify', function (req, res) {
   let displayImage = req.files.displayImage
 
   // Use the mv() method to place the file somewhere on your server
-  displayImage.mv('/app/uploads/input.jpg', function(err) {
+  displayImage.mv('/app/uploads/input', function(err) {
     if (err)
     return res.status(500).send(err)
 
